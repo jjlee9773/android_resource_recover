@@ -89,3 +89,36 @@ enum class FileFilter {
     IMAGES_ONLY,
     VIDEOS_ONLY
 }
+
+/**
+ * Enum representing sort options
+ */
+enum class SortOption {
+    DATE_DESC,      // Newest first
+    DATE_ASC,       // Oldest first
+    NAME_ASC,       // A to Z
+    NAME_DESC,      // Z to A
+    SIZE_DESC,      // Largest first
+    SIZE_ASC        // Smallest first
+}
+
+/**
+ * Enum representing date filter options
+ */
+enum class DateFilter {
+    ALL,
+    TODAY,
+    THIS_WEEK,
+    THIS_MONTH,
+    CUSTOM
+}
+
+/**
+ * Enum representing size filter options
+ */
+enum class SizeFilter {
+    ALL,
+    SMALL,      // < 1MB
+    MEDIUM,     // 1MB - 10MB
+    LARGE       // > 10MB
+}
